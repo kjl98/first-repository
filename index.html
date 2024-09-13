@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Moving line</title>
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	#line {
+		height: 5px;
+		width: 400px;
+		display: block;
+		background-color: rgb(23, 23, 170);
+		margin-top: 350px;
+		position: relative;
+		animation-timing-function: ease-in;
+		animation-duration: 1s;
+		animation-name: move;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes move {
+		0% {
+			left: -10px;
+		}
+
+		10% {
+			left: 100;
+		}
+
+		20% {
+			left: 200;
+		}
+
+		30% {
+			left: 300;
+		}
+
+		40% {
+			left: 400;
+		}
+
+		50% {
+			left: 500;
+		}
+
+		60% {
+			left: 600;
+		}
+
+		70% {
+			left: 700;
+		}
+
+		80% {
+			left: 800;
+		}
+
+		90% {
+			left: 900;
+		}
+
+		100% {
+			left: 1152;
+			right: 0;
+		}
+	}
+
+	img{
+		display: none;
+	}
+
+
+
+</style>
+
+<body>
+	<div id="line"></div>
+	<img src="no_internet.png" alt="Error 404">
+</body>
+
+</html>
